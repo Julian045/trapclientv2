@@ -20680,7 +20680,8 @@ a.list-group-item-danger.active, button.list-group-item-danger.active, a.list-gr
                     </div>
 								    	    <div id="isfiuhew"><center>
 						<span><b>Click the button below to connect to the server:</b></span><br>
-						<button style="" id="serverbutton" class="botserver" type="button" onclick="connect('ws://127.0.0.1:8081'); $('#servermode').text('ConnectToServer'); $('#mini').text('10/10');">ConnectToServer</button>
+<input class="form-control" id="serverIP" placeholder="Put server here" maxlength="15" autofocus="" style="width:100%" value="">
+						<button style="" id="serverbutton" class="botserver" type="button" onclick="connect(document.getElementById('serverIP').value); $('#servermode').text('ConnectToServer'); $('#mini').text('10/10');">ConnectToServer</button>
                     <div class="checkbox" id="settings" style="display:none">
                         <div style="float: left; width: 200px">
                             <div id="locationKnown"></div>
